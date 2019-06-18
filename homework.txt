@@ -1,0 +1,69 @@
+# Assignment Operator
+1. What is a?
+a is "bongos"
+2. What is b?
+b is  true
+3. What is c?
+c is "bongos"
+
+
+# Concatenation
+4. Fill in the console.log()?
+console.log(firstWord+" "+secondWord+" "+thirdWord+" "+fourthWord);
+5. How can we make num3 equal to the sum of num1 and num2?
+let num3 = num1+num2;
+6. Use variables num1, num2 and num3 to fill in the console.log() to complete the sentence:
+console.log(num3);
+
+# Comparisons
+
+a)  false 
+b)  true
+c)  false 
+d)  false
+e)  false
+f)  false
+g)  true
+h)  false
+
+
+# Conditionals
+
+for (var i=1; i <= 100; i++)
+{
+    if (i % 15 == 0)
+        console.log("FizzBuzz");
+    else if (i % 3 == 0)
+        console.log("Fizz");
+    else if (i % 5 == 0)
+        console.log("Buzz");
+    else
+        console.log(i);
+}
+
+
+#  Raindrops
+function getFactors(integer){
+    var factors = [],
+    quotient = 0;
+
+    for(var i = 1; i <= integer; i++){
+      quotient = integer/i;
+  
+      if(quotient === Math.floor(quotient)){
+        factors.push(i); 
+      }
+    }
+    let result = "";
+    if (factors.includes(3)){
+        result += "Pling";
+    }
+    if (factors.includes(5)){
+        result += "Plang";
+    }
+    if (factors.includes(7)){
+        result += "Plong";
+    }
+    console.log(result);
+    return factors;
+  }
